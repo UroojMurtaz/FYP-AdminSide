@@ -1,0 +1,115 @@
+input {
+  display: none;
+}
+.toggleWrapper {
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .2s;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fe4551;
+  box-shadow: 0 20px 20px 0 rgba(#fe4551, 0.3);
+  
+  &:active {
+    width: 24px;
+    height: 24px;
+    box-shadow: 0 15px 15px 0 rgba(#fe4551, 0.5);
+    
+    .toggle {
+      height: 17px;
+      width: 17px;
+    }
+  }
+  
+  .toggle {
+    transition: all 0.2s ease-in-out;
+    height: 10px;
+    width: 10px;
+    background-color: transparent;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    animation: red .7s linear forwards;
+  }
+}
+
+
+input:checked {
+  & ~ .background {
+    background-color: #f9faf7;
+  }
+  & + .toggleWrapper {
+    background-color: #48e98a;
+    box-shadow: 0 20px 20px 0 rgba(#48e98a, 0.3);
+    
+    &:active {
+      box-shadow: 0 15px 15px 0 rgba(#48e98a, 0.5);
+    }
+
+    .toggle {
+      width: 0;
+      background-color: #fff;
+      border-color: transparent;
+      border-radius: 30px;
+      animation: green .7s linear forwards !important;
+    }
+  }
+}
+
+.categoryTable{
+    height: 618px;
+    padding: 20px;
+
+
+    .cellWithImage{
+      display: flex;
+      align-items: center;
+      
+
+      .cellImg{
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 20px;
+         
+          
+      } 
+  }
+
+    .cellWithStatus {
+      padding: 5px;
+      border-radius: 5px;
+
+      &.Enabled {
+        background-color: rgba(0, 128, 0, 0.05);
+        color: green;
+      }
+      &.Disabled {
+        background-color: rgba(255, 0, 0, 0.05);
+        color: crimson;
+      }
+    }
+
+      .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    
+        .icon{
+            // color: red;
+            font-size: 24px;
+            cursor: pointer;
+
+            &:nth-child(1){
+              color: rgb(238, 62, 62);
+            }
+        }
+      }
+}
+

@@ -1,0 +1,33 @@
+.home_container{
+    display: flex;
+    // padding: 5px;
+
+    .home_new_container{
+        flex: 6;
+        .widgets, .charts{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .charts{
+            padding: 5px 20px; 
+            // background-color: aqua;
+            top: -10px;
+            .size{
+                width: 650px;
+                height: 250px;
+                // background-color: aquamarine;
+            }
+            .pie{
+                width: 450px;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                // background-color: aqua;
+            }
+        }
+    }
+}

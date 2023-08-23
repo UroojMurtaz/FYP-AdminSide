@@ -1,0 +1,45 @@
+.AddCategory {
+    display: flex;
+    width: 100%;
+
+    .AddcategoryContainer {
+        flex: 6;
+        
+        .Addcategory-main{
+            padding: 25px;
+            background-color: white;
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(167, 158, 158, 0.47);
+            // border-radius: 1rem;
+            .stepper-image{
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                      padding: 10px;
+                      margin: 20px;
+                .stepper-image-left {
+                  flex: 1;
+                  text-align: center;
+              
+                  img {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  }
+                }
+              
+                .stepper-image-right {
+                  flex: 2;
+                  padding: 10px;
+                  text-align: center;
+                }
+              
+              }
+
+        }
+        .AddCategory-Back-Button{
+            display: flex;
+            align-items: center;
+        }
+    }
+}

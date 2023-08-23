@@ -1,0 +1,70 @@
+.shopOwner {
+  display: flex;
+  width: 100%;
+  .shopOwner_container {
+    flex: 6;
+
+    .ShopOwnerTable {
+      height: 618px;
+      padding: 20px;
+
+      .top {
+        margin-bottom: 10px;
+        margin-top: -10px;
+
+        .ui.button {
+          margin-left: 69rem;
+          background-color: #7252e7;
+          width: 150px;
+          color: white;
+        }
+      }
+
+      .cellWithImage {
+        display: flex;
+        align-items: center;
+
+        .cellImg {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 20px;
+        }
+      }
+
+      .cellWithStatus {
+        padding: 5px;
+        border-radius: 5px;
+
+        &.Activated {
+          background-color: rgba(0, 128, 0, 0.05);
+          color: green;
+        }
+        &.Deactivated {
+          background-color: rgba(255, 0, 0, 0.05);
+          color: crimson;
+        }
+      }
+
+      .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .icon {
+          // color: red;
+          font-size: 24px;
+          cursor: pointer;
+
+          &:nth-child(1) {
+            color: black;
+          }
+          &:nth-child(2) {
+            color: rgb(238, 62, 62);
+          }
+        }
+      }
+    }
+  }
+}
